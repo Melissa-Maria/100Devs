@@ -1,0 +1,62 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body {
+    background-image:url('../witcher-characters/images/background.webp');
+    background-size: cover;
+    display: flex;
+}
+
+section {
+    background: white;
+    width: 30%;
+    height: 650px;
+    display: flex;
+    /* flex: 1; */
+    flex-wrap: wrap; /* Allows items to wrap onto the next line */
+    justify-content: space-around; /* Distributes space around items horizontally */
+    align-items: flex-start; 
+    margin: 10px;
+}
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.hidden {
+    display: none;
+}
+
+h1 {
+    margin: 25px;
+    text-align: center;
+}
+
+.character {
+    border: solid black 3px;
+    width: 200px;
+    text-align: center;
+    flex: 1 1 200px; 
+    margin: 5px;
+    padding: 15px;
+    background-color: lightgray;
+
+}
+
+.charImage {
+    width: 50%;
+    height: 50%;
+    margin: 20px;
+    border: solid black 20px;
+    text-align: center;
+}
