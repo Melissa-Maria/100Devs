@@ -22,18 +22,21 @@
 // }
 
 // // 0c --> 32F
-document.querySelector('#yell').addEventListener('click', convert);
+document.querySelector('#yell').addEventListener('click', convertTemp);
 
-function convert(){
+function convertTemp(){
     // need value in celcius
     let temp = document.querySelector('#cel').value;
 
     //convert from celcius to farenheit
+    // * 9/5 + 32
     temp = temp * 9/5 + 32;
  
     //show it
-    document.querySelector("#placeToYell").innerText = temp;
+    document.querySelector('#placeToYell').innerText = temp;
 }
+
+
 
 
 
