@@ -31,15 +31,14 @@
 //   synth.speak(yellThis);
 // }
 
-document.querySelector('#yell').addEventListener('click', shoutName);
+document.querySelector('#yell').addEventListener('click', yell);
 
-function shoutName(){
+function yell(){
   let firstName = document.querySelector('#firstName').value;
   let firstMiddle = document.querySelector('#firstMiddle').value;
   let lastMiddle = document.querySelector('#lastMiddle').value;
   let lastName = document.querySelector('#lastName').value;
 
-  const yellText = `${firstName} ${firstMiddle} ${lastMiddle} ${lastName}`;
-
-  document.querySelector('#placeToYell').innerText = yellText;
+  document.querySelector('#placeToYell').innerText = `${firstName} ${firstMiddle} ${lastMiddle} ${lastName}`
 }
+

@@ -1,0 +1,18 @@
+/** 1 point specificity **/
+/** if target using a class instead of tag there is more specificity **/ 
+h2 {
+    color: red;
+}
+
+/** below overrides styling in cascade as they are directi children **/
+section > h2 {
+    color: blue;
+}
+
+/** target duck to be purple **/
+/** h2 is direct chile of article **/
+/** article is direct sibling of section **/
+/** 3 points specificity **/
+section + article h2 {
+    color: purple;
+}

@@ -1,0 +1,9 @@
+h1 {
+    color : red;
+    font-weight: inherit;
+}
+
+/** below style will override above styling **/
+h1 {
+    color: blue;
+}

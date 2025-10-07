@@ -18,6 +18,7 @@ body {
 
 section {
     background: white;
+    border: solid black 3px;
     width: 30%;
     height: 650px;
     display: flex;
@@ -42,7 +43,8 @@ h1 {
     text-align: center;
 }
 
-.character {
+.character,
+button {
     border: solid black 3px;
     width: 200px;
     text-align: center;
@@ -50,12 +52,17 @@ h1 {
     margin: 5px;
     padding: 15px;
     background-color: lightgray;
+    cursor: pointer; 
 
 }
 
+button {
+    margin-bottom: 300px;
+}
+
 .charImage {
-    width: 50%;
     height: 50%;
+    width: 50%;
     margin: 20px;
     border: solid black 20px;
     text-align: center;

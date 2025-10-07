@@ -74,34 +74,30 @@
 //   document.querySelector('body').style.color = 'white';
 // }
 
-document.querySelector('#purple').addEventListener('click', partyPurple);
-document.querySelector('#green').addEventListener('click', partyGreen);
-document.querySelector('#blue').addEventListener('click', partyBlue);
-document.querySelector('#red').addEventListener('click', partyRed);
+document.querySelector('#purple').addEventListener('click', choosePurple);
+document.querySelector('#green').addEventListener('click', chooseGreen); 
+document.querySelector('#blue').addEventListener('click', chooseBlue); 
+document.querySelector('#red').addEventListener('click', chooseRed);
 
-function partyPurple(){
+function choosePurple(){
   document.querySelector('body').style.backgroundColor = 'rgba(241,63,247,1)';
-  document.querySelector('body').style.color = 'white';
+  document.querySelector('body').style.color = 'black';
 }
 
-function partyGreen(){
+function chooseGreen(){
   document.querySelector('body').style.backgroundColor = 'rgba(0,253,81,1)';
-  document.querySelector('body').style.color = 'Blue';
+  document.querySelector('body').style.color = 'blue';
 }
 
-function partyBlue(){
+function chooseBlue() {
   document.querySelector('body').style.backgroundColor = 'rgba(0,254,255)';
-  document.querySelector('body').style.color = 'orange';
-
-}
-
-function partyRed(){
-  document.querySelector('body').style.backgroundColor = 'red';
   document.querySelector('body').style.color = 'yellow';
 }
 
-
-
+function chooseRed(){
+  document.querySelector('body').style.backgroundColor = 'red';
+  document.querySelector('body'). style.color = 'orange';
+}
 
 
 

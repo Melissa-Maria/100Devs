@@ -53,59 +53,66 @@
 // logWord("Frog", 4);
 
 // *Variables*
-// Create a variable and console log the value
-let name = "Mel";
-console.log(name);
+// // Create a variable and console log the value
+// let age = 32;
+// console.log(age);
 
-// Create a variable, add 10 to it, and alert the value
-let sum = 10;
-sum = sum + 5;
-alert(sum);
+// // Create a variable, add 10 to it, and alert the value
+// let num = 52;
+// num = num + 10;
+// alert(num);
 
-// *Functions*
-// Create a function that subtracts 4 numbers and alerts the difference
-function subtractFourAlert(num1, num2, num3, num4){
-alert(num1 - num2 - num3 - num4)
-}
+// // *Functions*
+// // Create a function that subtracts 4 numbers and alerts the difference
+// function subFourNum(num1, num2, num3, num4){
+//     let result = num1 - num2 - num3 - num4;
+//     alert(result);
+// }
 
-subtractFourAlert(15, 3, 4, 1);
+// subFourNum(90, 4, 10, 6);
 
-// Create a function that divides one number by another and returns the remainder
-function divides(num1, num2){
-    return num1 % num2
-}
+// // Create a function that divides one number by another and returns the remainder
+// function returnRemainder(num1, num2){
+//     let product = num1 % num2;
+//     return product;
+// }
 
-console.log(divides(14, 3));
+// console.log(returnRemainder(5, 2));
 
-// *Conditionals*
-// Create a function that adds two numbers and if the sum is greater than 50 alert Jumanji
-function addTwoAlert(num1, num2){
-    if(num1 + num2 > 50){
-        alert("Jumani");
-    }
-}
+// // *Conditionals*
+// // Create a function that adds two numbers and if the sum is greater than 50 alert Jumanji
+// function addTwoAndAlert(num1, num2){
+//     let product = num1 + num2;
+//     if(product > 50){
+//         alert("Jumanji")
+//     }
+// }
 
-addTwoAlert(45,50);
+// addTwoAndAlert(49,7);
 
 
-// Create a function that multiplys three numbers and if the product is divisible by 3 alert ZEBRA
-function multiplyAlert(num1, num2, num3){
-    let multiply = num1 * num2 * num3;
-    if(multiply % 3 === 0){
-        alert('ZEBRA');
-    }
+// // Create a function that multiplys three numbers and if the product is divisible by 3 alert ZEBRA
+// function multiplyThree(num1, num2, num3){
+//     let product = num1 * num2 * num3;
+//     if(product % 3 === 0){
+//         alert("ZEBRA")
+//     }
+// }
 
-}
+// multiplyThree(2, 3, 4);
+// multiplyThree(1, 2, 4);
 
-multiplyAlert(6, 5, 4);
-
-//*Loops*
-//Create a function that takes in a word and a number. 
-// Console log the word x times where x was the number passed in
+// //*Loops*
+// //Create a function that takes in a word and a number. 
+// // Console log the word x times where x was the number passed in
 function logWord(word, num){
     for(let i = 1; i <= num; i++){
         console.log(word)
     }
 }
 
-logWord('Hey', 4);
+logWord("helicopter", 5);
+
+
+
+
