@@ -53,20 +53,18 @@
 
 
 
-document.querySelector('#check').addEventListener('click', check);
 
-function check(){
-  let day = document.querySelector('#day').value.toLowerCase();
+
+document.querySelector('#check').addEventListener('click', checkDay);
+
+function checkDay(){
+  const day = document.querySelector('#day').value.toLowerCase();
 
   if(day === "tuesday" || day === "thursday"){
-    document.querySelector('#placeToSee').innerText = "Class Day";
-    document.querySelector('#placeToSee').style.color = "violet";
-  } else if (day === "saturday" || day === "sunday"){
-    document.querySelector("#placeToSee").innerText = "Yay it's the weekend!!"
-    document.querySelector('#placeToSee').style.color = "green";
+    document.querySelector('#placeToSee').innerText = "Its class day!"
+  }else if(day === "saturday" || day === "sunday"){
+    document.querySelector('#placeToSee').innerText = "Yay it's the weekend!!"
   } else {
-    document.querySelector('#placeToSee').innerText = "Another boring day"
+    document.querySelector('#placeToSee').innerText = "Another boring day "
   }
 }
-
-
