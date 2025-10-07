@@ -36,33 +36,33 @@
 
 
 
-document.querySelector('h1').addEventListener('click', check);
+// document.querySelector('h1').addEventListener('click', check);
 
-function check(){
+// function check(){
 
-let age = document.querySelector('#danceDanceRevolution').value;
-let result = document.querySelector('p');
+// let age = document.querySelector('#danceDanceRevolution').value;
+// let result = document.querySelector('p');
 
-if(age < 16){
-    result.innerText = "Tell them they can not drive"
-    // console.log("tell them they can not drive")
-} else if(age < 18){
-    result.innerText = "tell them they can't hate from outside the club, because they can't even get in"
-    // console.log("tell them they can't hate from outside the club, because they can't even get in")
-} else if(age < 21){
-    result.innerText = "tell them they can not drink"
-    // console.log("tell them they can not drink")
-} else if(age < 25){
-    result.innerText = "tell them they can not rent cars affordably"
-    // console.log("tell them they can not rent cars affordably")
-} else if(age < 30){
-    result.innerText = "tell them they can not rent fancy cars affordably"
-    // console.log("tell them they can not rent fancy cars affordably")
-} else {
-    result.innerText = "tell them there is nothing left to look forward too"
-    // console.log("tell them there is nothing left to look forward too")
-}
-}
+// if(age < 16){
+//     result.innerText = "Tell them they can not drive"
+//     // console.log("tell them they can not drive")
+// } else if(age < 18){
+//     result.innerText = "tell them they can't hate from outside the club, because they can't even get in"
+//     // console.log("tell them they can't hate from outside the club, because they can't even get in")
+// } else if(age < 21){
+//     result.innerText = "tell them they can not drink"
+//     // console.log("tell them they can not drink")
+// } else if(age < 25){
+//     result.innerText = "tell them they can not rent cars affordably"
+//     // console.log("tell them they can not rent cars affordably")
+// } else if(age < 30){
+//     result.innerText = "tell them they can not rent fancy cars affordably"
+//     // console.log("tell them they can not rent fancy cars affordably")
+// } else {
+//     result.innerText = "tell them there is nothing left to look forward too"
+//     // console.log("tell them there is nothing left to look forward too")
+// }
+// }
 
 
 //--- Harder
@@ -70,4 +70,24 @@ if(age < 16){
 //Take the value from the input
 //Place the result of the conditional in the paragraph
 
+document.querySelector('h1').addEventListener('click', checkAge);
+
+function checkAge(){
+    let age = document.querySelector('#danceDanceRevolution').value;
+    let result = document.querySelector('p');
+
+    if(age < 16){
+        result.innerText = "tell them they can not drive";
+    }else if(age < 18){
+        result.innerText = "tell them they can't hate from outside the club, because they can't even get in"
+    }else if(age < 21){
+        result.innerText = "tell them they can not drink";
+    }else if(age < 25){
+        result.innerText = "tell them they can not rent cars affordably";
+    }else if(age < 30){
+        result.innerText = "tell them they can not rent fancy cars affordably"
+    }else {
+        result.innerText = "tell them there is nothing left to look forward too"
+    }
+}
 
