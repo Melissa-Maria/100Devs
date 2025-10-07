@@ -54,53 +54,54 @@
 
 // *Variables*
 // // Create a variable and console log the value
-// let age = 32;
-// console.log(age);
+let age = 32;
+console.log(age);
 
 // // Create a variable, add 10 to it, and alert the value
-// let num = 52;
-// num = num + 10;
-// alert(num);
+let num = 5;
+num = num + 10;
+alert(num);
 
 // // *Functions*
 // // Create a function that subtracts 4 numbers and alerts the difference
-// function subFourNum(num1, num2, num3, num4){
-//     let result = num1 - num2 - num3 - num4;
-//     alert(result);
-// }
+function subFour(num1, num2, num3, num4){
+    alert(num1 - num2 - num3 - num4)
+}
 
-// subFourNum(90, 4, 10, 6);
+subFour(70, 6, 10, 8)
 
 // // Create a function that divides one number by another and returns the remainder
-// function returnRemainder(num1, num2){
-//     let product = num1 % num2;
-//     return product;
-// }
+function returnRemainder(num1, num2){
+    return num1 % num2;
+}
 
-// console.log(returnRemainder(5, 2));
+console.log(returnRemainder(10,7))
 
 // // *Conditionals*
 // // Create a function that adds two numbers and if the sum is greater than 50 alert Jumanji
-// function addTwoAndAlert(num1, num2){
-//     let product = num1 + num2;
-//     if(product > 50){
-//         alert("Jumanji")
-//     }
-// }
+function jumanji(num1, num2){
+    let sum = num1 + num2;
+    if(sum > 50){
+        alert("Jumanji")
+    }
+}
 
-// addTwoAndAlert(49,7);
+jumanji(45,2)
+jumanji(30,45)
 
 
 // // Create a function that multiplys three numbers and if the product is divisible by 3 alert ZEBRA
-// function multiplyThree(num1, num2, num3){
-//     let product = num1 * num2 * num3;
-//     if(product % 3 === 0){
-//         alert("ZEBRA")
-//     }
-// }
+function multiplyThree(num1, num2, num3){
+    let product = num1 * num2 * num3;
+    if(product % 3 === 0){
+        alert('ZEBRA')
+    }else{
+        alert('Sorry, result is not divisible by 3')
+    }
+}
 
-// multiplyThree(2, 3, 4);
-// multiplyThree(1, 2, 4);
+multiplyThree(10, 4, 5)
+multiplyThree(10, 2, 3)
 
 // //*Loops*
 // //Create a function that takes in a word and a number. 
@@ -111,7 +112,7 @@ function logWord(word, num){
     }
 }
 
-logWord("helicopter", 5);
+logWord("coffee", 4)
 
 
 
